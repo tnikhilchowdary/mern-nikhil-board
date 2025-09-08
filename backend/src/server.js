@@ -3,7 +3,7 @@ import notesRoute from "./routes/notesRoutes.js";
 import {connectDb} from "./config.js/db.js";
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 const app =  express();
 connectDb();
 app.use(express.json());
