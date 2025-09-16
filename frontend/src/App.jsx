@@ -6,6 +6,8 @@ import {BrowserRouter, Routes, Route, Router} from "react-router-dom";
 import CreatePage from './pages/CreatePage';
 import HomePage from './pages/HomePage';
 import NoteDetailPage from './pages/NoteDetailPage';
+import NotesList from './pages/NotesList';
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/createpage" element={<CreatePage />} />
         <Route path="/notedetail" element={<NoteDetailPage />} />
+        <Route path="/noteslist" element={<NotesList/>} />
       </Routes>
     </BrowserRouter>
   )
