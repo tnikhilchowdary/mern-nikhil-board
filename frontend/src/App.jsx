@@ -5,8 +5,7 @@ import './App.css'
 import {BrowserRouter, Routes, Route, Router} from "react-router-dom";
 import CreatePage from './pages/CreatePage';
 import HomePage from './pages/HomePage';
-import NoteDetailPage from './pages/NoteDetailPage';
-import NotesList from './pages/NotesList';
+
 
 
 
@@ -16,10 +15,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/createpage" element={<CreatePage />} />
-        <Route path="/notedetail" element={<NoteDetailPage />} />
-        <Route path="/noteslist" element={<NotesList/>} />
+        <Route path="/homepage" element={<HomePage />} />
+        <Route path="/" element={<CreatePage />} />
       </Routes>
     </BrowserRouter>
   )
